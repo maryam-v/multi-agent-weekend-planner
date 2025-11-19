@@ -1,0 +1,5 @@
+google-adk
+litellm
+nest_asyncio
+rich
+python-dotenv
