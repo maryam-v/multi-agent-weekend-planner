@@ -20,7 +20,7 @@ This project demonstrates **multi‑agent orchestration**: three specialized age
 
 ## 🧩 Agent Pipeline Flow
 
-```mermaid
+```bash
 flowchart TD
     U[User Query] --> A1[Retrieve User Interest Agent]
     A1 --> A2[Discovery Agent]
