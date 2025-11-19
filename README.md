@@ -18,29 +18,52 @@ This project demonstrates **multi‑agent orchestration**: three specialized age
 
 ---
 
-## 🚀 Setup
+## 🧩 Agent Pipeline Flow
 
-Clone the repo and install dependencies:
+```mermaid
+flowchart TD
+    U[User Query] --> A1[Retrieve User Interest Agent]
+    A1 --> A2[Discovery Agent]
+    A2 --> A3[Itinerary Agent]
+    A3 --> F[Final Weekend Itinerary]
+
+---
+
+# 📂 Project Structure
+```
+weekend-planner/
+├── agents.py          # Defines the three specialized agents
+├── runner.py          # Async runner with colored logging
+├── main.py            # Entry point for demo execution
+├── requirements.txt   # Dependencies
+├── .env               # API keys (excluded via .gitignore)
+├── docs/
+│   └── demo-output.png  # Screenshot of demo run
+└── README.md
+```
+---
+
+# 🚀 Setup
+
+1. Clone the repo install dependencies:
 ```bash
 git clone https://github.com/yourusername/weekend-planner.git
 cd weekend-planner
+2. Install dependencies
+```bash
 pip install -r requirements.txt
-
-
-Create a .env file in the project root with your API keys:
-
+3. Create a .env file in the project root with your API keys:
 ```
 GOOGLE_API_KEY=your_google_api_key
 OPENAI_API_KEY=your_openai_api_key
 ANTHROPIC_API_KEY=your_anthropic_api_key
 GOOGLE_GENAI_USE_VERTEXAI=False
 ```
-
-# ▶️ Run the Demo
+4. Run the Demo
 ```bash
 python main.py
 
-# 🎨 Example Output
+# 🎨 Demo Output
 When you run main.py, you’ll see a colorful step-by-step pipeline:
 
 ```
@@ -87,3 +110,7 @@ Red → Errors/escalations
 Here’s what the pipeline looks like when you run `python main.py`:
 
 ![Weekend Planner Demo Screenshot](docs/demo-output.png)
+
+## 📜 License
+
+This project is licensed under the MIT License.
