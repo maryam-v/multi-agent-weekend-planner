@@ -25,7 +25,7 @@ This project demonstrates **multi‑agent orchestration**: three specialized age
     A1 --> A2[Discovery Agent]
     A2 --> A3[Itinerary Agent]
     A3 --> F[Final Weekend Itinerary]
-
+```
 ---
 
 ## 📂 Project Structure
@@ -45,18 +45,20 @@ weekend-planner/
 
 ## 🚀 Setup
 
-1. Clone the repo install dependencies:
+1. **Clone the repo**
 
 ```bash
 git clone https://github.com/yourusername/weekend-planner.git
 cd weekend-planner
+```
 
-2. Install dependencies
+2. **Install dependencies**
 
 ```bash
 pip install -r requirements.txt
+```
 
-3. Create a .env file in the project root with your API keys:
+3. **Create a .env file in the project root with your API keys**
 
 ```
 GOOGLE_API_KEY=your_google_api_key
@@ -64,11 +66,11 @@ OPENAI_API_KEY=your_openai_api_key
 ANTHROPIC_API_KEY=your_anthropic_api_key
 GOOGLE_GENAI_USE_VERTEXAI=False
 ```
-4. Run the Demo
+4. **Run the Demo**
 
 ```bash
 python main.py
-
+```
 ---
 
 ## 🎨 Demo Output
